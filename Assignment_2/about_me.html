@@ -1,76 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famous Person - Brief Overview</title>
+    <title>Brief Overview of Oswald</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-            background-color: #f8f8f8;
+            font-family: 'Cambria', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         header {
             text-align: center;
-            background-color: #333;
+            background-color: blue;
             color: #fff;
             padding: 10px;
-        }
-
-        #person-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
-        #person-info {
-            max-width: 60%;
-        }
-
-        #person-info h2 {
-            color: #333;
-        }
-
-        #person-images {
-            max-width: 40%;
-        }
-
-        #person-images img {
             width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #scrolling {
+            color: red;
+            text-transform: capitalize;
+        }
+        #character {
+            display: flex;
+            width: 100%;
+            flex: 1;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
+        #info {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
         }
+
+        #info p {
+            color: #333333;
+            font-size: large;
+            font-family: cursive;
+        }
+
+        #images {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #images img {
+            max-width: 90%;
+            border-radius: 9px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Famous Person Overview</h1>
+        <h1>Hey! Its a little about me!! <i>"Oswald"</i></h1>
+        <marquee id="scrolling" behavior="scroll" direction="right" scrollamount="10">
+        Have a great day!! -- Oswald & Weenie
+        </marquee>
     </header>
 
-    <div id="person-container">
-        <div id="person-info">
-            <h2>Person's Name</h2>
-            <p>Brief information about the famous person. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod augue vel lacus rhoncus, ac tempor felis ultricies. Nulla facilisi.</p>
+    <div id="character">
+        <div id="info">
+            <p>Oswald's character is a thoughtful blue octopus named Oswald who lives in an apartment complex. Oswald is an octopus that loves to have fun and is cautious about safety. He and his dog, Weenie, reside in an apartment building in Big City. His neighborhood is full of colorful characters, such as Madame Butterfly, the owner of the Big Diner, and her daughter, Catrina Caterpillar, as well as his friend Henry the Penguin. Oswald enjoys singing and playing the piano, and he always goes above and beyond to support his neighbors and friends.</p>
         </div>
-
-        <div id="person-images">
-            <img src="image1.jpg" alt="Person Image 1">
-            <img src="image2.jpg" alt="Person Image 2">
+        
+        <div id="images">
+            <img src="https://i.makeagif.com/media/4-28-2015/KQAVaX.gif" alt="Oswald">
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Famous Person Overview</p>
-    </footer>
 </body>
 </html>
