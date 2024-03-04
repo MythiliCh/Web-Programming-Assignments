@@ -1,0 +1,155 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief Overview About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: linear-gradient(to right, #3494e6, #ec6ead);
+            color: ghostwhite;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #3494e6, #ec6ead);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: 'Lucida Calligraphy', cursive;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        #images img {
+            width: 100%;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #character {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #info {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        #oswald img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #toc {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #8d5393;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            background-color: #10416b;
+            border-radius: 0 0 10px 10px;
+        }
+
+        @media only screen and (min-width: 600px) {
+            header {
+                padding: 50px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            #images img {
+                width: 200px;
+            }
+
+            #character {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #info {
+                max-width: 400px;
+                margin-bottom: 0;
+            }
+
+            #info p {
+                font-size: 18px;
+            }
+
+            #oswald img {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Oswald</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="character.html">Character</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Info</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="header">
+        <h1>Hey! It's a little about me!! <i>"Oswald"</i></h1>
+        <div id="images">
+            <img
+                src="https://facts.net/wp-content/uploads/2023/09/13-facts-about-oswald-oswald-1694566829.jpg"
+                alt="Oswald">
+        </div>
+    </header>
+
+    <div id="character">
+        <div id="info">
+            <p>I am friendly in nature and I always play with Weenie in the garden</p>
+        </div>
+        
+        <div id="images">
+            <img src="https://i.makeagif.com/media/4-28-2015/KQAVaX.gif" alt="Oswald">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
